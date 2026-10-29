@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Zendaya</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/iconflor.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+    <div class="sub-cabecalho">
+        <div class="sub-titulo">Clique em uma imagem para ampliar</div>
+    </div>
+  
+  <div class="cabecalho-titulo">
+    <h1 class="titulo">★ Galeria de zendaya ★</h1>
+  </div>
+    </header>
+
+    <hr>
+ 
+    <nav class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="zendayaPremier">Zendaya Premier</button>
+        <button class="filtro" data-filtro="zendayaProducoes">Zendaya produções</button>
+        <button class="filtro" data-filtro="zendayaPessoal">Zendaya pessoal</button>
+    </nav>
+ 
+    <p id="totalImagens" class="total"></p>
+ 
+    <main class="galeria">
+        <img src="./img/zendayaodisseia.png"
+        alt="Zandaya Odisseia"
+        class="miniatura destaque"
+        tabindex="0"
+        data-categoria="zendayaPremier"
+        data-descricao="Zendaya na Premier do filme Odisseia, vestida de  Matières Fécales">
+ 
+        <img src="./img/zendayaglobodeouro.png"
+        alt="zendayaglobodeouro"
+        class="miniatura horizontal"
+        data-categoria="zendayaProducoes"
+         data-descricao="Zendaya no Globo de Ouro de 2024"
+        tabindex="0">
+ 
+        <img src="./img/zendayaetom.png"
+        alt="zendayaetom"
+        class="miniatura"  
+        data-categoria="zendayaPessoal"
+        data-descricao="Zendaya com seu marido Tom Holland no  Emmy Awards 2026"
+        tabindex = "0">
+ 
+        <img src="./img/zendayascaparelli.png"
+        alt="zendayascaparelli"
+        class="miniatura vertical"  
+        data-categoria="zendayaPremier"
+        data-descricao="Zendaya na Premier do filme Odisseia, vestida de Scaparelli"
+        tabindex = "0">
+ 
+        <img src="./img/zendayaloira.png"
+        alt="zendayaloira"
+        class="miniatura"
+        data-categoria="zendayaPessoal"
+        data-descricao="Zendaya, com o cabelo descolorido, posando"
+        tabindex = "0">
+ 
+        <img src="./img/zendayametgala2024.png"
+        alt="zendayametgala2024"
+        class="miniatura horizontal"  
+        data-categoria="zendayaProducoes"
+        data-descricao="Produções da Zendaya para o Met Gala 2024"
+        tabindex = "0">
+       
+        <img src="./img/zendayarosa.png"
+        alt="zendayarosa"
+        class="miniatura"
+        data-categoria="zendayaPessoal"
+        data-descricao="Zendaya posando com um vestido rosa"
+        tabindex = "0">
+ 
+        <img src="./img/zendayaalianca.png"
+        alt="zandayaalinça"
+        class="miniatura"  
+        data-categoria="zendayaPessoal"
+        data-descricao="Zendaya mostrando sua aliança de noivado"
+        tabindex = "0">
+ 
+        <img src="./img/zendayamakeazul.png"
+        alt="zendayamakeazul"
+        class="miniatura horizontal"  
+        tabindex = "0"
+        data-categoria="zendayaProducoes"
+        data-descricao="Zendaya, produção para a premier de Odisseia">
+ 
+ 
+    <div id="modal" class="modal">
+        <button id="fechar" class="fechar">
+            &times
+        </button>
+       
+        <button id="anterior" class="navegacao anterior">
+            &#10094
+        </button>
+ 
+        <div class="modal-conteudo">
+            <img src="" alt="" id="imagemModal">
+            <div class="legenda">
+                <span id="contador"></span>
+                <span id="nomeImagem"></span>
+            </div>
+        </div>
+ 
+        <button id="proximo" class="navegacao proximo" aria-label="Proxima Imagem">
+            &#10095
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+ 
